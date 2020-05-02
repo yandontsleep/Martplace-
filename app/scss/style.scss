@@ -1,18 +1,177 @@
-html{
-    box-sizing: border-box;
+@import "vars";
+@import "global";
+
+@font-face {
+    font-family: "Quicksand regular";
+    src: url(../fonts/9261.otf);
 }
-*,
-*::before,
-*::after{
-    box-sizing: inherit;
+@font-face {
+    font-family: "Quicksand-Medium";
+    src: url(../fonts/Quicksand-Medium.ttf);
 }
-body{
-    background-color: green;
+.header {
+    background-color: #eef1f3;
 }
-.box{
+.header__top {
+    margin-bottom: 25px;
+    height: 100px;
+    align-items: center;
+    padding-top: 20px;
     display: flex;
-    
+    justify-content: space-between;
+    .header__top-pos {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
 }
-.text{
-    font-size: 25px;
+.header__button {
+    margin-right: 50px;
+    width: 140px;
+    height: 36px;
+    background-color: #0674ec;
+    position: relative;
+    border-radius: 25px;
+    a {
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 13px;
+
+        font-size: 14px;
+        text-align: left;
+    }
+}
+.header__nav {
+    padding-top: 1%;
+    margin-right: 50px;
+    height: 34px;
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    .header__circle {
+        padding-top: 14%;
+        font-size: 14px;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        min-width: 22px;
+        height: 22px;
+        padding-left: 6%;
+    }
+    .header__nav-kolokolchik {
+        position: relative;
+        #header__circle1 {
+            min-width: 26px;
+            top: -51%;
+            right: -104%;
+            position: absolute;
+            background-color: #ff6a6c;
+        }
+    }
+
+    .header__nav-pismo {
+        padding-top: 2%;
+        position: relative;
+        #header__circle2 {
+            top: -51%;
+            right: -75%;
+            position: absolute;
+            background-color: #62d03b;
+        }
+    }
+
+    .header__nav-telega {
+        position: relative;
+        #header__circle3 {
+            top: -51%;
+            right: -100%;
+            position: absolute;
+            background-color: #0674ec;
+        }
+    }
+}
+.header__profile {
+    display: flex;
+
+    .header__profile-image {
+        margin-right: 25px;
+        background-color: #7c7979;
+        width: 54px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .header__profile-wal-log {
+        padding-top: 3%;
+        .header__profile-login a {
+            font-size: 16px;
+            color: #333333;
+        }
+        .header__profile-wallet a {
+            font-size: 15px;
+            color: #0674ec;
+        }
+    }
+}
+.header__bottom {
+    .header__bottom-pos {
+        margin-top:20px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    background-color: white;
+    height: 80px;
+
+    nav ul {
+        li a {
+            margin-top: 25px;
+            font-family: "Quicksand-Medium";
+            line-height: 2.8;
+            font-size: 15px;
+            color: #333333;
+        }
+        display: flex;
+        justify-content: space-between;
+        width: 500px;
+    }
+}
+.search {
+    .search__border {
+        
+        margin-top: 20px;
+        outline: none;
+        position: relative;
+        width: 360px;
+        height: 45px;
+        border: 1px solid rgb(217, 223, 229);
+        border-radius: 40px;
+        button {
+            outline: none;
+            border: none;
+            top: -2%;
+            left: 81%;
+            border-radius: 25px;
+            width: 70px;
+            background-color: #0674ec;
+            height: 44px;
+            position: absolute;
+        }
+    }
+    input {
+        left: 7%;
+        top: 23%;
+        position: absolute;
+        border: none;
+        outline: none;
+        display: block;
+        &::placeholder {
+            font-size: 15px;
+            color: #898f96;
+        }
+    }
+}
+.qwe{
+    height: 725px;
+    background-color: #0d33bd;
 }
